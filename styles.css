@@ -1,0 +1,165 @@
+
+    /* Applique la police "Sofia" uniquement aux éléments avec la classe "sofia-text" */
+    .sofia-text {
+        font-family: 'Sofia', sans-serif;
+    }
+/* Section principale avec une image de fond */
+.about-section {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+/* Réinitialisation des marges et des bordures */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corps de la page */
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  background: #fff;
+  line-height: 1.6;
+}
+
+/* Styles du Header */
+header {
+  background-color: #d3b19a; /* Couleur principale du header */
+  padding: 10px 0;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Liens de navigation */
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffebcd; /* Couleur au survol */
+}
+
+
+/* Image d'arrière-plan pour la section 'À propos' */
+.about-bg-image {
+  background-image: url('https://www.carnetpsy.com/wp-content/uploads/2024/05/1716272491_traits-de-personnalite-dune-femme-elegante-et-sophistiquee-scaled.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  
+}
+
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  font-size: 2rem;
+  font-style: italic;
+}
+
+/* Contenu principal de la section À propos */
+.about-content {
+  padding: 40px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-content h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #A80038;
+}
+
+.about-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-motto {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #A80038;
+  margin-top: 30px;
+}
+
+/* Missions section */
+.about-missions {
+  background-color: #d3b19a;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.about-missions h3 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+/* Disposition en grille pour les missions */
+.missions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.mission-item {
+  background-color: #B2024;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.mission-item h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.mission-item p {
+  font-size: 1rem;
+  color: #fff;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .missions-grid {
+      grid-template-columns: 1fr;
+  }
+}
+
+
+
+
