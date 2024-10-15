@@ -3,6 +3,7 @@
 <head>
    <!-- Lien vers le fichier CSS -->
    <link rel="stylesheet" href="style.css"> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
    <meta charset="UTF-8">
    <title>Jupe</title>
   </head>
@@ -18,9 +19,9 @@
              <li><a href="Robe.html">Robe</a></li>
              <li><a href="Jupe.html">Jupe</a></li>
              <li><a href="Pantalon.html">Pantalon</a></li>
-             <li><a href="#chemise">Chemise</a></li>
+            
              <li><a href="about.html">À Propos</a></li>
-             <li><a href="#contact">Contact</a></li>
+             <li><a href="panier.html" id="view-cart">Voir Panier</a></li>
          </ul>
      </nav>
    
@@ -31,11 +32,13 @@
          </button>
      </div>
     
- <!-- Affichage du panier dans le header -->
-  <div>
-      <button id="view-cart">Voir Panier (<span id="cart-count">0</span>)</button>
-  </div>
- 
+   <!-- Affichage du panier dans le header -->
+   <div>
+    <button id="view-cart"> <i class="fas fa-shopping-cart"></i>  (<span id="cart-count">0</span>)</button>
+</div>
+   
+
+
 
 </header>
 
@@ -62,11 +65,13 @@
          <p>Jupe Midi épaisse en laine </p>
          <ul>
            <li style="--clr-tag:#d3b19a;" class="prix">200 dh</li>
-            <li style="--clr-tag:#efefc8;" class="Ajoutez au Panier">Ajoutez au Panier</li>
+            <li style="--clr-tag:#efefc8;" class="Ajoutez-au-Panier">Ajoutez au Panier</li>
          </ul>
        </div>
      </div>
    
+
+
      <!-- Card 2 -->
      <div class="card">
        <div class="card-inner" style="--clr:#fff;">
@@ -86,7 +91,7 @@
          <p>Mini jupe cuir pour femmes</p>
          <ul>
            <li style="--clr-tag:#d3b19a;" class="prix">150 DH</li>
-            <li style="--clr-tag:#efefc8;" class="Ajoutez au Panier">Ajoutez au Panier</li>
+            <li style="--clr-tag:#efefc8;" class="Ajoutez-au-Panier">Ajoutez au Panier</li>
          </ul>
        </div>
      </div>
@@ -110,7 +115,7 @@
          <p>Jupe plissée rose et élégante </p>
          <ul>
            <li style="--clr-tag:#d3b19a;" class="prix">100 DH</li>
-            <li style="--clr-tag:#efefc8;" class="Ajoutez au Panier">Ajoutez au Panier</li>
+            <li style="--clr-tag:#efefc8;" class="Ajoutez-au-Panier">Ajoutez au Panier</li>
          </ul>
        </div>
      </div>
@@ -134,7 +139,7 @@
          <p>Jupe  fendue en velours </p>
          <ul>
            <li style="--clr-tag:#d3b19a;" class="prix">200 DH</li>
-            <li style="--clr-tag:#efefc8;" class="Ajoutez au Panier">Ajoutez au Panier</li>
+            <li style="--clr-tag:#efefc8;" class="Ajoutez-au-Panier">Ajoutez au Panier</li>
          </ul>
        </div>
      </div>
@@ -159,8 +164,9 @@
         <p>Jupe Midi épaisse taille haute</p>
         <ul>
           <li style="--clr-tag:#d3b19a;" class="prix">150 DH</li>
-           <li style="--clr-tag:#efefc8;" class="Ajoutez au Panier">Ajoutez au Panier</li>
+           <li style="--clr-tag:#efefc8;" class="Ajoutez-au-Panier">Ajoutez au Panier</li>
         </ul>
+      
       </div>
     </div>
   
