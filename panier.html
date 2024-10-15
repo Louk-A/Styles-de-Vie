@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sofia:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="Robe.html">Robe</a></li>
+                    <li><a href="Jupe.html">Jupe</a></li>
+                    <li><a href="Pantalon.html">Pantalon</a></li>
+                    
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="panier.html" id="view-cart">Voir Panier</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Votre Panier</h1>
+            <div id="cart-items"></div>
+            <button id="clear-cart">Vider le Panier</button>
+            <button id="add-more-items">Ajouter Plus d'Articles</button>
+            <button id="checkout">Passer à la Caisse</button>
+
+            <div id="cart-details">
+                <!-- Détails des articles du panier seront affichés ici -->
+            </div>
+            <div id="total-price">Prix total : 0 DH</div>
+        </main>
+
+        <footer>© 2024 - Styles de Vie - Tous droits réservés.<br>Made with ❤</footer>
+    </div>
+
+    <script src="panier.js"></script> <!-- Ajoutez votre script pour gérer le panier -->
+</body>
+</html>
+
+<style>
+  html, body {
+    height: 100%; /* Assure que le corps et le html occupent toute la hauteur */
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Colonne pour empiler les éléments */
+    min-height: 100vh; /* Fait en sorte que la hauteur minimale de la container soit 100% de la fenêtre */
+}
+
+main {
+    flex: 1; /* Prend tout l'espace disponible pour pousser le footer en bas */
+    padding: 20px; /* Ajoutez du padding si nécessaire */
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Centrer le titre */
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between; /* Aligner le texte et les boutons */
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Ligne de séparation */
+}
+
+.cart-item:last-child {
+    border-bottom: none; /* Pas de ligne pour le dernier élément */
+}
+
+button {
+    background-color: #fd0054; /* Couleur de fond des boutons */
+    color: #fff; /* Couleur du texte */
+    border: none;
+    font-size: 1.2em;
+    border-radius: 10px; /* Coins arrondis pour les boutons */
+    padding: 15px 15px; /* Espacement intérieur */
+    cursor: pointer; /* Curseur de main au survol */
+    transition: background-color 0.3s ease; /* Transition pour l'effet de survol */
+}
+
+button:hover {
+    background-color: #d40048; /* Couleur au survol */
+}
+
+#total-price {
+    font-weight: bold; /* Texte en gras */
+    font-size: 1.5em; /* Taille de police plus grande */
+    margin-top: 20px; /* Marge supérieure pour espacer du contenu précédent */
+    text-align: right; /* Alignement à droite */
+}
+
+#cart-count {
+    background-color: #fd0054; /* Couleur de fond du compteur */
+    color: #fff; /* Couleur du texte */
+    border-radius: 50%; /* Forme ronde pour le compteur */
+    padding: 5px 10px; /* Espacement intérieur */
+    font-weight: bold; /* Texte en gras */
+}
+
+.hidden {
+    display: none; /* Classe pour cacher les éléments si nécessaire */
+}
+
+footer {
+    background: #d3b19a;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    /* Supprimez flex-grow et flex: 1 ici */
+}
+
+</style>
