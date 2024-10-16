@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             item.style.display = itemName.includes(query) ? 'block' : 'none';
         });
     });
+    
 
     // Recherche via la touche "Entrée"
     document.querySelector('.search-bar input').addEventListener('keydown', function (e) {
@@ -68,3 +69,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
