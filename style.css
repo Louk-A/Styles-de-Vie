@@ -36,6 +36,8 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
+  
+
 }
 
 .nav-links li {
@@ -64,14 +66,14 @@ header {
   border: 2px solid #ccc;
   border-radius: 25px;
   outline: none;
-  width: 250px;
+  width: 150px;
   font-size: 16px;
   transition: width 0.4s ease, border-color 0.3s ease;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .search-bar input:focus {
-  width: 300px;
+  width: 100px;
   border-color: #a80038; /* Couleur de la bordure au focus */
 }
 
@@ -281,13 +283,13 @@ footer{
   color: #fff; /* Couleur du texte */
   border: none;
   padding: 10px 20px;
-  border-radius: 25px; /* Arrondi des coins */
-  font-size: 16px;
+  border-radius: 10px; /* Arrondi des coins */
+  font-size: 15px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Ombre du bouton */
-  margin-left: 20px; /* Espace à gauche du bouton */
+  margin-left: 10px; /* Espace à gauche du bouton */
 }
 
 /* Effet au survol pour le bouton "Voir Panier" */
@@ -301,8 +303,8 @@ footer{
   font-weight: bold;
   color: #fff; /* Couleur du compteur */
   background-color: #a80038; /* Fond du compteur */
-  border-radius: 50%; /* Forme arrondie pour le compteur */
+  border-radius: 20%; /* Forme arrondie pour le compteur */
   padding: 5px 10px;
-  font-size: 14px;
+  font-size: 10px;
   margin-left: 5px;
 }
