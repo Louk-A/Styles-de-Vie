@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 0);
       totalPriceElement.textContent = `Prix total : ${totalPrice.toFixed(2)} DH`; // Met à jour le prix total affiché
   }
+  
 
   // Vider le panier
   document.getElementById('clear-cart').addEventListener('click', function () {
@@ -59,3 +60,4 @@ document.addEventListener("DOMContentLoaded", function () {
   // Appeler la fonction pour initialiser l'affichage du panier
   displayCartItems(); // Affiche les articles au chargement de la page
 });
+  
