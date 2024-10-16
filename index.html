@@ -293,9 +293,35 @@ footer{
   text-align: center;
 }
 
+</style>
 
-    img {
-    max-width: 100%;
-    height: auto;
+<style>
+  /* Pour les écrans de mobile */
+@media (max-width: 768px) {
+    .image-banner {
+        width: 100%;
+        height: auto; /* Ajuste la hauteur automatiquement pour maintenir le ratio de l'image */
+    }
+
+    /* Pour s'assurer que l'image ne dépasse pas les limites du container */
+    .container-banner {
+        width: 100%;
+        overflow: hidden; /* Empêche tout débordement */
+    }
+
+    /* Centrer le bouton sur l'image */
+    .button {
+        position: absolute;
+        top: 50%; /* Ajuste la position du bouton au centre vertical */
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centrage horizontal et vertical */
+    }
+}
+
+/* Optionnel : Styles généraux pour l'image en desktop */
+.image-banner {
+    width: 100%;
+    height: auto; /* Maintenir le ratio */
+    object-fit: cover; /* S'assure que l'image occupe tout l'espace sans déformation */
 }
 </style>
