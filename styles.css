@@ -45,10 +45,12 @@ header {
 .nav-links {
   list-style: none;
   display: flex;
+  gap: 10px; /* Ajout d'un grand espacement entre les éléments pour l'affichage desktop */
 }
 
+
 .nav-links li {
-  margin-left: 20px;
+  margin-left: 7px;
 }
 
 .nav-links a {
@@ -68,7 +70,7 @@ header {
   background-image: url('https://www.carnetpsy.com/wp-content/uploads/2024/05/1716272491_traits-de-personnalite-dune-femme-elegante-et-sophistiquee-scaled.jpg');
   background-size: cover;
   background-position: center;
-  height: 900px;
+  height: 650px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,13 +155,12 @@ header {
   color: #fff;
 }
 
+
+
 /* Responsiveness */
 @media (max-width: 768px) {
   .missions-grid {
       grid-template-columns: 1fr;
   }
 }
-
-
-
 
